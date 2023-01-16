@@ -20,16 +20,13 @@ class Hilo  extends Thread {
 // from Script class. And this superClass has its own public main method. So it cannot be runned.
 // however it can be runned, if we only separate definition of classes in multiple files or remove
 // the main method and treat is a a script
-class SomeClass {
-    static void main(String[] args){
-        Hilo h1=new Hilo("Hola")
-        Hilo h2=new Hilo("Mundo")
-        Hilo h3=new Hilo("como")
-        Hilo h4=new Hilo("estas?")
 
-        h1.start()
-        h2.start()
-        h3.start()
-        h4.start()
-    }
-}
+Hilo h1=new Hilo("Hola")
+Hilo h2=new Hilo("Mundo")
+Hilo h3=new Hilo("como")
+Hilo h4=new Hilo("estas?")
+
+h1.start()
+h2.start()
+h3.start()
+h4.start()
